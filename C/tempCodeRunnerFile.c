@@ -1,1 +1,1 @@
- Program to check whether a number is armstrong or not
+int factorial(int num){
