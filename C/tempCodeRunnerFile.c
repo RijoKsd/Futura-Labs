@@ -1,1 +1,1 @@
-int factorial(int num){
+(strrev(string),string)
