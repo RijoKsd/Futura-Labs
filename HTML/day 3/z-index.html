@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            position: relative;
+             
+         }
+        div {
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 100px;
+            position: absolute;
+        }
+
+        .div1 {
+            background-color: rgb(135, 187, 233);
+            z-index: -1;
+            top:70px;
+            left:70px;
+        }
+
+        .div2 {
+            background-color: rgb(83, 202, 170);
+            z-index: 1;
+            top: 150px;
+            left: 150px;
+
+        }
+
+        .div3 {
+            background-color: rgb(223, 157, 59);
+            z-index: 100;
+            top:220px;
+            left: 220px;
+        }
+
+        .div4 {
+            background-color: rgb(236, 82, 239);
+            z-index: 9999;
+            top: 290px;
+            left: 290px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="parent">
+        <div class="div1">Z-index: -1</div>
+        <div class="div2">z-index :1</div>
+        <div class="div3">z-index:100</div>
+        <div class="div4">z-index:9999</div>
+    </section>
+</body>
+
+</html>
