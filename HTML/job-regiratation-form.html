@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            width: 100%;
+        }
+
+        h1,
+        h4 {
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        form {
+            width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        table {
+            width: 100%;
+            /* border: 1px solid black; */
+            border-collapse: collapse;
+        }
+
+        td {
+            padding-right: 5px;
+        }
+
+        input {
+            /* width: 250px; */
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 2px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            border: 1px solid #ccc;
+        }
+
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 2px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            border: 1px solid #ccc;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 2px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            border: 1px solid #ccc;
+        }
+
+        input::file-selector-button {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            border: 1px solid #ccc;
+        }
+
+        input[type="checkbox"] {
+            width: auto;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-top: 1.6rem;
+        }
+
+        input[type="submit"] {
+            background-color: green;
+            color: white;
+        }
+
+        input[type="reset"] {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Online Job Registration Portal</h1>
+    <h4>Register yourself to get now new job update</h4>
+    <form>
+        <table>
+            <tr>
+                <th>Full Name</th>
+                <td><input type="text" placeholder="First name" required /></td>
+                <td><input type="text" placeholder="Last name" required /></td>
+            </tr>
+            <tr>
+                <th rowspan="3">Address</th>
+                <td colspan="2">
+                    <input type="text" placeholder="Address" required />
+                </td>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="City" required /></td>
+
+                <td><input type="text" placeholder="State" required /></td>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="Pincode" required /></td>
+                <td>
+                    <select>
+                        <option value="India" selected>Country</option>
+                        <option value="India">India</option>
+                        <option value="Germany">Germany</option>
+                        <option value="Sri-Lanka">Sri Lanka</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Phone Number</th>
+                <td><input type="text" placeholder="Country code" required /></td>
+                <td><input type="text" placeholder="Phone number" required /></td>
+            </tr>
+            <tr>
+                <th>Mobile</th>
+                <td colspan="2">
+                    <input type="text" placeholder="Mobile number" required />
+                </td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td colspan="2">
+                    <input type="email" placeholder="Email" required />
+                </td>
+            </tr>
+            <tr>
+                <th>Cover Letter</th>
+                <td colspan="2">
+                    <textarea></textarea>
+                </td>
+            </tr>
+            <tr>
+                <th>Resume</th>
+                <td colspan="2"><input type="file" required /></td>
+            </tr>
+            <tr>
+                <th>Declaration</th>
+                <td colspan="2">
+                    <input type="checkbox" required /> I hereby declare that the
+                    information provided above is true to the best of my knowledge.
+                </td>
+            </tr>
+            <tr>
+                <th></th>
+                <td><input type="submit" value="Submit" /></td>
+                <td><input type="reset" value="Reset" /></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
