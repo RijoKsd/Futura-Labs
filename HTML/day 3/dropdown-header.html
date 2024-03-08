@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #0d9d0d;
+            color: #fff;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            position: relative;
+            margin-right: 18px;
+        }
+
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: -10px;
+            list-style-type: none;
+            padding: 0;
+            background-color: #0d9d0d;
+            transition: all 0.5s ease;
+            opacity: 0;
+        }
+
+
+        nav ul li ul li {
+            display: block;
+            padding: 10px;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+            opacity: 1;
+            transition-delay: 0.5s;
+
+        }
+
+        nav ul li ul li {
+            display: block;
+            padding-top: 8px;
+        }
+
+        /* Style the links */
+        nav ul li a {
+            color: #000;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        /* Change the link color on hover */
+        nav ul li a:hover {
+            color: #f00;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a>
+                    <ul>
+                        <li><a href="#">Engineering</a></li>
+                        <li><a href="#">Telecom</a></li>
+                        <li><a href="#">Energy</a></li>
+                        <li><a href="#">Finance</a></li>
+                        <li><a href="#">Consultancy</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>
