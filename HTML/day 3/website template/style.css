@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing:border-box; */
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+nav ul {
+  display: flex;
+  justify-content: end;
+}
+
+nav ul li {
+  background-color: rgb(126, 129, 124);
+  margin: 0 15px;
+  padding: 8px 15px;
+  border-radius: 8px 8px 0 0;
+}
+
+nav ul:last-child {
+  margin-right: 55px;
+}
+
+nav ul li:hover {
+  background-color: #34b306;
+}
+
+header {
+  background-color: #222121;
+  color: #fff;
+}
+
+.logo {
+  margin-left: 55px;
+  font-family: cursive;
+}
+
+.logo h2 {
+  color: #34b306;
+  font-size: 2rem;
+}
+
+.logo p {
+  font-weight: normal;
+}
+
+main {
+  margin: 10px 100px;
+}
+
+main .hero-image {
+  border: 15px ridge rgb(171, 171, 171);
+  margin-bottom: 20px;
+}
+
+main .hero-image img {
+  width: 100%;
+  height: 45vh;
+  object-fit: cover;
+}
+
+.hero-content {
+  width: 100%;
+  display: flex;
+
+}
+
+.hero-content .main-content {
+  flex: 2;
+  height: 500px;
+  display: inline-block;
+  padding: 28px;
+ }
+
+.hero-content aside {
+  flex: 1;
+  height: 500px;
+  display: inline-block;
+}
+
+
+.main-content p,
+h3 {
+  margin-bottom: 10px;
+}
+
+.main-content h3 {
+  font-size: 1.7rem;
+  font-weight: lighter;
+}
+
+.main-content p {
+  line-height: 24px;
+  word-spacing: 3px;
+}
+
+main .highlights h3 {
+  color: rgb(89, 237, 237);
+}
+
+main .highlights ul {
+  margin-left: 40px;
+  list-style: disc;
+}
+
+aside a {
+  color: gold;
+  text-decoration: underline;
+  font-size: 0.8rem;
+}
+aside .aside-news,
+aside .aside-links,
+aside .aside-search {
+  padding: 20px;
+  margin-bottom: 10px;
+  border: 1px solid #222121;
+  border-radius: 10px;
+}
+aside h3 {
+  font-variant: small-caps;
+  font-weight: lighter;
+}
+aside p {
+  font-size: 0.8rem;
+}
+footer{
+    text-align: center;
+    background-color: #222121;
+    color:#fff;
+    padding:20px;
+    border-top:5px ridge  #34b306;
+
+}
+footer p{
+    font-size:12px;
+    margin-bottom: 10px;
+}
