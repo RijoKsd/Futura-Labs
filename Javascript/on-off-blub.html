@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <img src="./off-bulb.jpeg" alt="bulb" width="70" id="bulb">
+
+    <button onclick=onBtn()>ON</button>
+    <button onclick=offBtn()>OFF</button>
+
+    <script>
+
+        let img = document.getElementById("bulb");
+
+        function onBtn() {
+            if (img.src.match("off-bulb")) {
+                img.src = "./on-bulb.jpg";
+            }
+        }
+
+
+        function offBtn() {
+            if (img.src.match("on-bulb")) {
+                img.src = "./off-bulb.jpeg";
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
